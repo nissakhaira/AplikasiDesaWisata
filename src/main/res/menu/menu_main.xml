@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.droidcafe.MainActivity">
+    <item
+        android:id="@+id/action_maps"
+        android:orderInCategory="10"
+        android:title="@string/action_maps"
+        android:icon="@drawable/ic_baseline_location_on_24"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_akun"
+        android:orderInCategory="20"
+        android:title="@string/action_akun"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_account_circle_24"/>
+    <item
+        android:id="@+id/action_call"
+        android:orderInCategory="40"
+        android:title="@string/action_call"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sms"
+        android:orderInCategory="100"
+        android:title="@string/action_sms"
+        app:showAsAction="never" />
+</menu>

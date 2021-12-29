@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="#EDEDED">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please fill the input below here"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittextshape"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Enter your Username" />
+
+        <EditText
+            android:id="@+id/password"
+            android:background="@drawable/edittextshape"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittextshape"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Date of Birth"
+            android:inputType="date"/>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittextshape"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Enter your Number "
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittextshape"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Enter your Address " />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="male"
+                android:buttonTint="@color/choco"/>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="female"
+                android:buttonTint="@color/choco" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="sign up"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="sign in"
+            android:onClick="login"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
